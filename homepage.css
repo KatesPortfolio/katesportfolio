@@ -76,7 +76,7 @@ header {
   font-size: 80px;
   margin-top: 100px;
   margin-bottom: 0;
-  animation: typing 4s steps(40, end) forwards,
+  animation: typing 4s steps(32, end) forwards,
     blink-caret 0.75s step-end infinite;
 
   display: inline-block;
