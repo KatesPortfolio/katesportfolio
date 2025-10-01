@@ -43,14 +43,14 @@ body {
   --second-background-color: #ccd8c7;
   --third-background-color: #eaded0;
   --header-background-color: #eaded0;
-  --header-background-color2:#fff6c1;
+  --header-background-color2: #fff6c1;
 }
 
 /* --------------------
    HEADER & NAVIGATION
 -------------------- */
 header {
-  background-color: var(--header-background-color2);
+  background-color: rgba(255, 208, 223, 0.7);
   height: 50px;
   display: flex;
   justify-content: space-between;
@@ -60,8 +60,6 @@ header {
   top: 0;
   right: 0;
   left: 0;
-
-  opacity: 0.7;
 }
 
 .navigation {
@@ -187,6 +185,8 @@ header {
 #logga {
   font-family: Jaro;
   margin-left: 100px;
+  text-decoration: none;
+  color: black;
 }
 
 .box {
