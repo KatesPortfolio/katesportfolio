@@ -1,0 +1,208 @@
+/* --------------------
+   RESET & GLOBAL
+-------------------- */
+body {
+  margin: 0;
+  background-color: var(--main-background-color2);
+}
+
+/* --------------------
+   FONTS
+-------------------- */
+@font-face {
+  font-family: Jaro;
+  src: url(./fonts/Jaro/Jaro-Regular-VariableFont_opsz.ttf);
+}
+
+@font-face {
+  font-family: Onest;
+  src: url(./fonts/Onest/Onest-VariableFont_wght.ttf);
+}
+
+@font-face {
+  font-family: JosefinSlab;
+  src: url(./fonts/Josefin_Slab/JosefinSlab-Italic-VariableFont_wght.ttf);
+}
+
+@font-face {
+  font-family: TeachersItalic;
+  src: url(./fonts/Teachers/Teachers-Italic-VariableFont_wght.ttf);
+}
+
+@font-face {
+  font-family: TeachersBold;
+  src: url(./fonts/Teachers/Teachers-VariableFont_wght.ttf);
+}
+
+/* --------------------
+   VARIABLES
+-------------------- */
+:root {
+  --main-background-color: #ebe6df;
+  --main-background-color2: #fff0f5;
+  --second-background-color: #ccd8c7;
+  --third-background-color: #eaded0;
+  --header-background-color: #eaded0;
+  --header-background-color2: #ffd0df;
+}
+
+/* --------------------
+   HEADER & NAVIGATION
+-------------------- */
+header {
+  background-color: var(--header-background-color2);
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+
+  opacity: 0.7;
+}
+
+.navigation {
+  display: flex;
+  gap: 20px;
+  margin-right: 50px;
+}
+
+.navigation-items {
+  font-family: Jaro;
+  text-decoration: none;
+  color: black;
+}
+
+/* --------------------
+   DROPDOWN
+-------------------- */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-menu1 {
+  display: none;
+  flex-direction: column;
+  gap: 10px;
+  border-radius: 5px;
+  padding: 10px;
+
+  position: absolute;
+  top: 100%;
+  left: 0;
+
+  background-color: var(--header-background-color2);
+  width: 200px;
+  box-shadow: 5px 5px 16px 5px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-menu1 {
+  display: flex;
+}
+
+.big-box {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.big-box:hover {
+  background-color: var(--second-background-color);
+}
+
+.icons {
+  width: 25px;
+  height: 25px;
+}
+
+.wrap-box a {
+  text-decoration: none;
+  color: black;
+  font-family: Jaro;
+  text-align: right;
+}
+
+/* --------------------
+   HERO / INTRO
+-------------------- */
+
+#katesPortfolio {
+  font-family: Jaro;
+  font-size: 80px;
+  -webkit-text-stroke: 3px #fff6c1;
+  margin: 100px 0 0;
+
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+
+  border-right: 0.15em solid; /* cursor */
+  width: 0;
+
+  animation: typing 4s steps(80, end) forwards,
+    blink-caret 0.75s step-end infinite;
+}
+
+#logga {
+  font-family: Jaro;
+  margin-left: 50px;
+}
+
+.section-1 {
+  margin: 80px;
+  display: flex;
+  gap: 160px;
+  margin-left: 150px;
+}
+
+#profile-pic {
+  width: 350px;
+  height: 450px;
+  background-color: blue;
+  border-radius: 50%;
+  margin-top: 40px;
+}
+
+.right-side {
+  width: 500px;
+}
+
+h1{
+    text-align: center;
+    font-family: jaro;
+    font-size: 60px;
+     -webkit-text-stroke: 1px var(--main-background-color);
+}
+
+p{
+    font-family: josefinslab;
+    font-size: 20px;
+    text-align: left;
+}
+
+.box {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin: 100px auto 0 auto;
+  max-width: 1200px;
+}
+
+.box1,
+.box2,
+.box3 {
+  border: 3px solid white;
+  border-radius: 5px;
+}
+
+#image-games {
+  width: 300px;
+  height: 350px;
+}
