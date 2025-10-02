@@ -135,7 +135,7 @@ header {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  height: 700px;
+  height: 1000px;
 
   margin: 50px auto 0 auto;
   display: flex;
@@ -226,6 +226,10 @@ h2 {
   font-family: TeachersBold;
 }
 
+.section-2{
+  margin-bottom: 100px;
+}
+
 /* --------------------
    ANIMATIONS
 -------------------- */
@@ -246,4 +250,63 @@ h2 {
   50% {
     border-color: black;
   }
+}
+
+/*------------------FOOTER---------------------*/
+footer{
+  display: flex;
+  justify-content: space-around;
+  background-color: pink;
+  padding: 40px;
+  margin: 0;
+}
+
+.contact-info{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  text-decoration: none;
+  font-family: Jaro;
+}
+
+.contact-info a, .short-cuts a{
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+}
+
+.short-cuts{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-family: Jaro;
+}
+
+.icons{
+  display: flex;
+  gap: 5px;
+}
+
+.left{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+#logga-footer, #contact-footer{
+  font-family: Jaro;
+  font-size: 30px;
+  text-decoration: none;
+  color: black;
+}
+
+.social-icons {
+  display: flex;
+  gap: 5px;
+}
+
+.icon {
+  width: 25px;
+  height: 25px;
 }

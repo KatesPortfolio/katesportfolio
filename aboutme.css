@@ -3,9 +3,6 @@
 -------------------- */
 body {
   margin: 0;
-  /* Använder bakgrundsfärg och bild från variabler */
-  background-color: var(--main-background-color3);
-  background-image: url(./Images/home/genomskillnig.png);
 }
 
 /* --------------------
@@ -143,11 +140,17 @@ header {
    HERO / INTRO (SECTION 1)
 -------------------- */
 .section-1 {
-  margin: 80px;
+  margin-top: 50px;
   display: flex;
   gap: 100px;
   align-items: center;
   align-items: flex-start;
+  background-image: url(./Images/home/genomskillnig.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 1000px;
+
 }
 
 .left-side {
@@ -241,6 +244,11 @@ h3 {
 /* --------------------
    SECTION 2 (IMAGE BOXES)
 -------------------- */
+
+.section-2{
+  padding: 40px;
+  background-color: var(--second-background-color);
+}
 .box {
   display: flex;
   justify-content: center;
@@ -283,4 +291,63 @@ h3 {
   50% {
     border-color: black;
   }
+}
+
+/*------------------FOOTER---------------------*/
+footer{
+  display: flex;
+  justify-content: space-around;
+  background-color: pink;
+  padding: 40px;
+  margin: 0;
+}
+
+.contact-info{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  text-decoration: none;
+  font-family: Jaro;
+}
+
+.contact-info a, .short-cuts a{
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+}
+
+.short-cuts{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-family: Jaro;
+}
+
+.icons{
+  display: flex;
+  gap: 5px;
+}
+
+.left{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+#logga-footer, #contact-footer{
+  font-family: Jaro;
+  font-size: 30px;
+  text-decoration: none;
+  color: black;
+}
+
+.social-icons {
+  display: flex;
+  gap: 5px;
+}
+
+.icon {
+  width: 25px;
+  height: 25px;
 }

@@ -4,7 +4,12 @@
 body {
   margin: 0;
   background-color: var(--second-background-color);
+  height: 100%;
   
+}
+
+main{
+  flex: 1;
 }
 
 /* --------------------
@@ -145,6 +150,7 @@ header {
   align-items: center;
   gap: 40px;
   margin-top: 80px;
+  margin-bottom: 200px;
   padding: 20px;
 }
 
@@ -160,7 +166,7 @@ header {
   align-items: baseline;
 }
 
-#letters {
+#letters-picture {
   width: 350px;
   height: 350px;
   border: 5px solid white;
@@ -224,4 +230,59 @@ p{
   50% {
     border-color: black;
   }
+}
+
+/*------------------FOOTER---------------------*/
+footer{
+  display: flex;
+  justify-content: space-around;
+  background-color: pink;
+  padding: 40px;
+  margin: 0;
+}
+
+.contact-info{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  text-decoration: none;
+  font-family: Jaro;
+}
+
+.short-cuts{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-family: Jaro;
+}
+
+
+.left{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+#logga-footer, #contact-footer{
+  font-family: Jaro;
+  font-size: 30px;
+  text-decoration: none;
+  color: black;
+  -webkit-text-stroke: 1px var(--header-background-color2);
+}
+
+.social-icons {
+  display: flex;
+  gap: 5px;
+}
+
+.icon {
+  width: 25px;
+  height: 25px;
+}
+
+.footer-text{
+  font-family: Jaro;
+  color: black;
 }
