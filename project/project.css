@@ -1,0 +1,221 @@
+/* --------------------
+   RESET & GLOBAL
+-------------------- */
+body {
+  margin: 0;
+  background-color: var(--second-background-color);
+  height: 100%;
+  
+}
+
+main{
+  flex: 1;
+}
+
+/* --------------------
+   FONTS
+-------------------- */
+@font-face {
+  font-family: Jaro;
+  src: url(../fonts/Jaro/Jaro-Regular-VariableFont_opsz.ttf);
+}
+
+@font-face {
+  font-family: Onest;
+  src: url(../fonts/Onest/Onest-VariableFont_wght.ttf);
+}
+
+@font-face {
+  font-family: JosefinSlab;
+  src: url(../fonts/Josefin_Slab/JosefinSlab-Italic-VariableFont_wght.ttf);
+}
+
+@font-face {
+  font-family: TeachersItalic;
+  src: url(../fonts/Teachers/Teachers-Italic-VariableFont_wght.ttf);
+}
+
+@font-face {
+  font-family: TeachersBold;
+  src: url(../fonts/Teachers/Teachers-VariableFont_wght.ttf);
+}
+
+/* --------------------
+   VARIABLES
+-------------------- */
+:root {
+  --main-background-color: #ebe6df;
+  --main-background-color2: #fff9e3;
+  --second-background-color: #ccd8c7;
+  --third-background-color: #eaded0;
+  --header-background-color: #eaded0;
+  --header-background-color2: #fff6c1;
+}
+
+/* --------------------
+   HEADER & NAVIGATION
+-------------------- */
+header {
+  background-color: rgba(255, 208, 223, 0.7);
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+}
+
+.navigation {
+  display: flex;
+  gap: 35px;
+  margin-right: 100px;
+}
+
+.navigation-items {
+  font-family: Jaro;
+  text-decoration: none;
+  color: black;
+}
+
+/* --------------------
+   DROPDOWN
+-------------------- */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-menu1 {
+  display: none;
+  flex-direction: column;
+  gap: 10px;
+  border-radius: 5px;
+  padding: 10px;
+
+  position: absolute;
+  top: 100%;
+  left: 0;
+
+  background-color: var(--header-background-color2);
+  width: 200px;
+  box-shadow: 5px 5px 16px 5px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-menu1 {
+  display: flex;
+}
+
+.big-box {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.big-box:hover {
+  background-color: var(--second-background-color);
+}
+
+.icons {
+  width: 25px;
+  height: 25px;
+}
+
+.wrap-box a {
+  text-decoration: none;
+  color: black;
+  font-family: Jaro;
+  text-align: right;
+}
+
+#logga {
+  font-family: Jaro;
+  margin-left: 100px;
+  text-decoration: none;
+  color: black;
+}
+#icon {
+  width: 20px;
+  height: 20px;
+}
+
+/*-----------MAIN-----------------------*/
+
+main{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+}
+
+.cards{
+    padding: 20px;
+    border: 2px solid white;
+    border-radius: 20px;
+
+}
+
+.picture-cards{
+    width: 200px;
+    border-radius: 20px;
+
+}
+
+.part-2, .part-1, .part-3, .part-4 {
+    display: flex;
+    gap: 40px;
+
+}
+
+h2{
+    text-align: center;
+    font-family: JosefinSlab;
+    font-size: 40px;
+    padding: 20px;
+}
+
+h1{
+    font-family: Jaro;
+    font-size: 60px;
+    text-align: center;
+  -webkit-text-stroke: 1px var(--header-background-color2);
+
+   display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  width: 50%;
+
+  animation: typing 4s steps(80, end) forwards,
+    blink-caret 0.75s step-end infinite;
+}
+
+
+
+/* --------------------
+   ANIMATIONS
+-------------------- */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: black;
+  }
+}
